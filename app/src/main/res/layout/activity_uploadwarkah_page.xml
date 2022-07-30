@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uploadwarkahPage"
+    android:orientation="vertical"
+    android:background="@color/maincolor3"
+    tools:ignore="ScrollViewCount">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/registerremovebg"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosansstdbold_tr"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="25dp"
+        android:text="UPLOAD DOKUMEN / WARKAH"
+        android:textColor="@color/maincolor2"
+        android:textSize="20sp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="2sp"
+        />
+
+
+
+    <EditText
+        android:id="@+id/nomor_warkah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NOMOR WARKAH"
+        android:inputType="number"
+        android:maxLines="1"
+        android:maxLength="25"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="15sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="2sp"
+        android:textColorHint="@color/maincolor2"
+        android:fontFamily="@font/neosansstd_tr"/>
+
+    <EditText
+        android:id="@+id/tahun_warkah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TAHUN"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:inputType="number"
+        android:digits="0987654321"
+        android:maxLength="4"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="15sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="2sp"
+        android:textColorHint="@color/maincolor2"
+        android:fontFamily="@font/neosansstd_tr"/>
+
+    <Button
+        android:id="@+id/upload_but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PILIH DAN UPLOAD FILE PDF"
+        app:cornerRadius="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:backgroundTint="@color/maincolor2"
+        android:textColor="@color/maincolor"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="2sp"
+        android:fontFamily="@font/neosans_std_medium_tr"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="145dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="false"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        android:background="@drawable/logo_berakhlak"
+        app:menu="@menu/menu_navigation" />
+
+
+</LinearLayout>

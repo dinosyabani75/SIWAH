@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".aboutPage"
+    android:background="@color/maincolor"
+    android:orientation="vertical"
+    tools:ignore="ScrollViewCount">
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/backbutton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/maincolor"
+            android:src="@drawable/backbutton"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/maincolor3"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="false">
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/maincolor3"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="SIWAH"
+                        android:gravity="center"
+                        android:fontFamily="@font/neosans_std_ultra_tr"
+                        android:textColor="@color/maincolor2"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="Sistem Informasi Warkah"
+                        android:fontFamily="@font/neosansstd_tr"
+                        android:textColor="@color/maincolor2"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/neosansstd_tr"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:freezesText="true"
+                    android:text="@string/aboutMe_text"/>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin Kantor Pertanahan Kabupaten Barito Utara\n2022\nSupport By Android 8.0"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="255dp"
+            android:fontFamily="@font/neosansstd_tr"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="end"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:clickable="false"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"
+            android:background="@drawable/logo_berakhlak"
+            app:itemIconSize="100dp"
+            app:menu="@menu/menu_navigation" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage"
+    android:orientation="vertical"
+    android:background="@color/maincolor3"
+    tools:ignore="ScrollViewCount">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/dashboard_3"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosansstdbold_tr"
+        android:gravity="start"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="25dp"
+        android:text="DAFTARKAN AKUN ADMIN"
+        android:textColor="@color/maincolor2"
+        android:textSize="25sp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="2sp"
+        />
+
+
+
+    <EditText
+        android:id="@+id/nama_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NAMA"
+        android:inputType="textCapSentences"
+        android:maxLines="1"
+        android:maxLength="50"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="15sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="2sp"
+        android:textColorHint="@color/maincolor2"
+        android:fontFamily="@font/neosansstd_tr"/>
+
+    <EditText
+        android:id="@+id/nip_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NIP"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:inputType="number"
+        android:digits="0987654321"
+        android:maxLength="18"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="15sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="2sp"
+        android:textColorHint="@color/maincolor2"
+        android:fontFamily="@font/neosansstd_tr"/>
+
+    <EditText
+        android:id="@+id/password_reg"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/maincolor2"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:maxLength="30"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/black"
+        android:hint="PASSWORD"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="15sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="2sp"
+        android:fontFamily="@font/neosansstd_tr"/>
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        app:cornerRadius="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:backgroundTint="@color/maincolor2"
+        android:textColor="@color/maincolor"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="2sp"
+        android:fontFamily="@font/neosans_std_medium_tr"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosans_std_medium_tr"
+        android:gravity="end"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:text="Sudah mempunyai akun admin?"
+        android:textColor="@color/maincolor2"
+        android:textSize="15sp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="2sp"
+        />
+
+    <TextView
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosansstdbold_tr"
+        android:gravity="end"
+        android:layout_marginEnd="20dp"
+        android:text="LOGIN"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="2sp"
+        android:textColor="@color/maincolor2"
+        android:textSize="25sp"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="175dp"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:clickable="false"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        android:background="@drawable/logo_berakhlak"
+        app:menu="@menu/menu_navigation" />
+
+
+</LinearLayout>

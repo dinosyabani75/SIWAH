@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "157468111107",
+    "project_id": "siwah-ba1e5",
+    "storage_bucket": "siwah-ba1e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157468111107:android:b0c3e1477b3efb271ef936",
+        "android_client_info": {
+          "package_name": "com.example.siwah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157468111107-vndceeveq80eckimk036kf90rl2d2q20.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.siwah",
+            "certificate_hash": "ed1da8f06c6691103e92b1c6818be46d543bf00d"
+          }
+        },
+        {
+          "client_id": "157468111107-qk612g680an9ev7a218d6j74q0m55mrt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJkg-2zraY-Yn2r6ySFMdIK-Juz3IWZl0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157468111107-qk612g680an9ev7a218d6j74q0m55mrt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
